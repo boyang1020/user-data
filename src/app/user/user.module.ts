@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UserComponent } from './user.component';
-import { MatFormFieldModule, MatInputModule, MatPaginatorModule, MatTableModule  } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatPaginatorModule, MatTableModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
