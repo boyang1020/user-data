@@ -34,14 +34,5 @@ export class UserComponent implements OnInit {
   }
 
   ngOnInit() {
-
-  }
-
-  applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
-    }
   }
 }
