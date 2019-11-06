@@ -4,6 +4,7 @@ import { UserService } from './user.service';
 import { forkJoin } from 'rxjs';
 import * as _ from 'lodash';
 import { MatTableDataSource } from '@angular/material/table';
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-user',
