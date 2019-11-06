@@ -1,12 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { UserComponent } from 'src/app/user/user.component';
+import { MatTableModule } from '@angular/material';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        UserComponent
       ],
+      imports: [HttpClientTestingModule, MatTableModule]
     }).compileComponents();
   }));
 
@@ -22,10 +27,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('user-data');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('user-data app is running!');
-  });
 });
